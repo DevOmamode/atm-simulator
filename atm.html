@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>ATM Machine</title>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="atm.css"/>
+ <link rel="stylesheet" href="mobijs/mobijs.css"/>
+ <script src="mobijs/mobijs.js"></script>
+        </head>
+    <body>
+        <div class="container">
+            <div class="main-bar">
+        <div class='top-pane'><div></div></div>
+        <div class="main">
+            <div class="btn-holder before">
+                <button val='1'></button>
+                <button val='2'></button>
+                <button val='3'></button>
+            </div>
+               <div class='screen'></div>
+             <div class="btn-holder after">
+                 <button val='4'></button>
+                <button val='5'></button>
+                <button val='6'></button>
+            </div>
+                </div>
+          <div class='bottom-pane'>
+            <div class='cash'><img/></div>
+              <div class="mainbtns">
+                <div class="holder">
+                  <button>1</button>
+                   <button>2</button>
+                   <button>3</button>
+ <button>4</button>
+                <button>5</button>
+                   <button>6</button>
+                   <button>7</button>
+ <button>8</button>
+ <button>9</button>
+ <button>0</button>
+ <button>.</button>
+ <button>#</button>
+                </div>
+              </div>
+              <div class="sidebtns">
+                <button class="cancel" onclick='removeCard()'>CANCEL</button>
+  <button class="clear" onclick='clrScr()'>CLEAR</button>
+  <button class="enter" onclick='enter()'>ENTER</button>
+              </div>
+                </div>
+       </div>
+        <div class="side-bar">
+            <div class='atm'>ATM</div>
+            <div class='receipt'>
+              <div class='text'>
+                RECEIPT
+              </div>
+              <div class='icon'></div>
+            </div>
+            <div class='card'>
+              <div class="cardEntry cardEntryNoCard"><div class='mouth'></div></div>
+            <div class='cardBox'>
+     <div onclick="insertCard(this)" class='atmcard'>
+       <div class='bankName'>iBank</div>
+       <div class='scchip'><img src='scchip.png'/></div>
+       <div class="num">0000 2222 1111 4444</div>
+       <div align='right' class='issuer'></div>
+       <div class='cardholder'>J. Omamode</div>
+     </div>
+     </div>
+     </div>
+     </div>
+     <audio class="btnBeat" style='opacity:0; display:none'></audio>
+        </div>
+        <script src="atm.js"></script>
+        </body>
+    </html>
